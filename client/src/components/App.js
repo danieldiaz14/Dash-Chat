@@ -1,13 +1,16 @@
 import React from 'react';
 
-import GoogleAuth from './GoogleAuth';
+
+import Header from './Header';
+import ChatBox from './Chat/ChatBox';
 
 class App extends React.Component {
 
     render() {
         return (
             <div className="ui container">
-                <GoogleAuth/>
+                <Header/>
+                <ChatBox/>
             </div>
         )
     }
