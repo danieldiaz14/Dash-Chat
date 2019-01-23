@@ -9,10 +9,10 @@ import {
     EDIT_CHAT
 } from './types';
 
-export const signIn = userId => {
+export const signIn = userInfo => {
     return {
         type: SIGN_IN,
-        payload: userId
+        payload: userInfo
     };
 };
 
