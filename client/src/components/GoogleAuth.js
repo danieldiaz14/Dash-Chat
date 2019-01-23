@@ -8,7 +8,7 @@ class GoogleAuth extends React.Component {
         window.gapi.load('client:auth2', () => {
             window.gapi.client.init({
                 clientId: '31538088877-c0h6vrpolnofg55k5997s9k63v2ppf38.apps.googleusercontent.com',
-                scope: 'email'
+                scope: 'profile'
             }).then(() => {
                 this.auth = window.gapi.auth2.getAuthInstance();
                 this.onAuthChange(this.auth.isSignedIn.get());
@@ -19,9 +19,9 @@ class GoogleAuth extends React.Component {
 
     onAuthChange = isSignedIn => {
         if (isSignedIn) {
-            this.props.signIn(this.auth.currentUser.get().getId());
+            this.props.signIn(this.auth.currentUser.get().getBasicProfile());
         } else {
-            this.props.signOut(this.auth.currentUser.get().getId());
+            this.props.signOut(this.auth.currentUser.get().getBasicProfile());
         }
     };
 
@@ -44,7 +44,6 @@ class GoogleAuth extends React.Component {
             </button>
             )
         } else {
-            console.log(this.auth.currentUser.get());
             return (
             <button onClick={this.onSignInClick} className="ui google plus button">
                 <i className="google plus icon"/>
@@ -54,18 +53,30 @@ class GoogleAuth extends React.Component {
         }
     }
 
+
     render() {
         return (
-            <div className="item">
-                {this.renderAuthButton()}
+            <div className="ui right aligned header">
+                <div className="ui horizontal list">
+                    <div className="item">
+                        <img className="ui mini circular image" src={this.props.userPic}/>
+                        <div className="content">
+                            <div className="ui sub header">{this.props.userName}</div>
+                            {this.renderAuthButton()}
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
-        isSignedIn: state.auth.isSignedIn
+        isSignedIn: state.auth.isSignedIn,
+        userName: state.auth.userName,
+        userId: state.auth.userId,
+        userPic: state.auth.userPic
     };
 };
 
