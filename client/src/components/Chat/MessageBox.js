@@ -6,6 +6,7 @@ import { createChat } from '../../actions/index';
 class MessageBox extends React.Component{
     state = {value: ''}
 
+    
     handleChange = (e) => {
         this.setState({value: e.target.value});
     }
@@ -13,14 +14,15 @@ class MessageBox extends React.Component{
     sendMessage = () => {
         this.props.createChat({
             message: this.state.value,
-            userName: this.props.currentUser.userName
+            userName: this.props.currentUser.userName,
+            userPic: this.props.currentUser.userPic
         });
         this.setState({value: ''});
     };
 
     render() {
         return (
-            <form className="ui reply form">
+            <form  className="ui reply form">
                 <div className="field">
                     <textarea value={this.state.value} onChange={this.handleChange}/>
                     <div onClick={this.sendMessage} className="ui button labeled submit icon button">
