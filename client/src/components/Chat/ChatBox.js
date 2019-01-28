@@ -1,9 +1,14 @@
 import React from 'react'
 import MessageBox from './MessageBox';
 
-
+import { fetchChats } from '../../actions/index';
+import { connect } from 'react-redux';
 
 class ChatBox extends React.Component {
+
+    componentDidMount() {
+        this.props.fetchChats();
+    }
 
     render() {
         return (
@@ -15,4 +20,11 @@ class ChatBox extends React.Component {
     }
 }
 
-export default ChatBox;
+const mapStateToProps = state => {
+    console.log(state)
+    return {
+        messages: state.chat
+    }
+}
+
+export default connect(mapStateToProps, {fetchChats})(ChatBox);

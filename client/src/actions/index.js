@@ -22,8 +22,12 @@ export const signOut = () => {
     };
 };
 
-export const createChat = message => async(dispatch) => {
+export const createChat = message => async (dispatch) => {
     const response = await chats.post('/chats', {...message});
-    console.log(response);
     dispatch({type: CREATE_CHAT, payload: response.data});
 };
+
+export const fetchChats = () => async (dispatch) => {
+    const response = await chats.get('/chats');
+    dispatch({type: FETCH_CHATS, payload: response.data});
+}
