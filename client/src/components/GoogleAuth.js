@@ -19,13 +19,9 @@ class GoogleAuth extends React.Component {
 
     onAuthChange = isSignedIn => {
         if (isSignedIn) {
-<<<<<<< HEAD
-            this.props.signIn(this.auth.currentUser.get().getBasicProfile());
-=======
             const userName = this.auth.currentUser.get().w3.ig;
             const userId = this.auth.currentUser.get().getId();
             this.props.signIn({userId, userName});
->>>>>>> faf7884bf5cc30055553bf9f09799210335eadf2
         } else {
             this.props.signOut(this.auth.currentUser.get().getBasicProfile());
         }
@@ -62,24 +58,11 @@ class GoogleAuth extends React.Component {
 
     render() {
         return (
-<<<<<<< HEAD
-            <div className="ui right aligned header">
-                <div className="ui horizontal list">
-                    <div className="item">
-                        <img className="ui mini circular image" src={this.props.userPic}/>
-                        <div className="content">
-                            <div className="ui sub header">{this.props.userName}</div>
-                            {this.renderAuthButton()}
-                        </div>
-                    </div>
-                </div>
-=======
             <div className="item">
                 <div style={{margin: '10px'}}>
                     <p>{this.props.userName}</p>
                 </div>
                 {this.renderAuthButton()}
->>>>>>> faf7884bf5cc30055553bf9f09799210335eadf2
             </div>
         )
     }
@@ -88,13 +71,7 @@ class GoogleAuth extends React.Component {
 const mapStateToProps = (state) => {
     return {
         isSignedIn: state.auth.isSignedIn,
-<<<<<<< HEAD
-        userName: state.auth.userName,
-        userId: state.auth.userId,
-        userPic: state.auth.userPic
-=======
         userName: state.auth.userName
->>>>>>> faf7884bf5cc30055553bf9f09799210335eadf2
     };
 };
 

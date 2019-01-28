@@ -1,4 +1,6 @@
 import React from 'react'
+import MessageBox from './MessageBox';
+
 
 
 class ChatBox extends React.Component {
@@ -7,6 +9,7 @@ class ChatBox extends React.Component {
         return (
             <div className="ui container">
                 ChatBox
+                <MessageBox/>
             </div>
         )
     }

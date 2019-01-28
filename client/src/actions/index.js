@@ -22,8 +22,8 @@ export const signOut = () => {
     };
 };
 
-export const createChat = message => async(dispatch, getState) => {
-    const {userId} = getState().auth;
-    const response = await chats.post('/chats', {...message, userId});
+export const createChat = message => async(dispatch) => {
+    const response = await chats.post('/chats', {...message});
+    console.log(response);
     dispatch({type: CREATE_CHAT, payload: response.data});
 };
