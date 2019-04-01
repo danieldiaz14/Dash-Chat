@@ -30,4 +30,7 @@ export const createChat = message => async (dispatch) => {
 export const fetchChats = () => async (dispatch) => {
     const response = await chats.get('/chats');
     dispatch({type: FETCH_CHATS, payload: response.data});
-}
+};
+export const deleteChat = () => async dispatch => {
+
+};

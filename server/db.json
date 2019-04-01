@@ -1,76 +1,18 @@
 {
   "chats": [
     {
-      "message": "Greetings friend",
+      "message": "another test",
       "userName": "daniel diaz",
       "userPic": "https://lh4.googleusercontent.com/-PyTNKgz01rY/AAAAAAAAAAI/AAAAAAAAAAA/DP_KBgXtx8k/s96-c/photo.jpg",
-      "id": 1
+      "userId": "107120720177755491457",
+      "id": 19
     },
     {
-      "message": "I am now sending another message",
+      "message": "chat",
       "userName": "daniel diaz",
       "userPic": "https://lh4.googleusercontent.com/-PyTNKgz01rY/AAAAAAAAAAI/AAAAAAAAAAA/DP_KBgXtx8k/s96-c/photo.jpg",
-      "id": 2
-    },
-    {
-      "message": "I am now the best",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 3
-    },
-    {
-      "message": "cars",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 4
-    },
-    {
-      "message": "cars\n",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 5
-    },
-    {
-      "message": "cras\n",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 6
-    },
-    {
-      "message": "asdasd",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 7
-    },
-    {
-      "message": "\nasdasda",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 8
-    },
-    {
-      "message": "\nasdasda",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 9
-    },
-    {
-      "message": "\nasdasdasd",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 10
-    },
-    {
-      "message": "sadasd",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 11
-    },
-    {
-      "message": "asdasd",
-      "userName": "Barry Aleen",
-      "userPic": "https://lh3.googleusercontent.com/-uNaMGKt8rR8/AAAAAAAAAAI/AAAAAAAAAAc/I4QiyG9r6D8/s96-c/photo.jpg",
-      "id": 12
+      "userId": "107120720177755491457",
+      "id": 20
     }
   ]
 }

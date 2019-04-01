@@ -17,7 +17,7 @@ class ChatBox extends React.Component {
         };
 
         return this.props.messages.map((element) => {
-            return  <Message key={element.id} message={element.message} userName={element.userName} userPic={element.userPic}/>
+            return  <Message key={element.id} message={element.message} userName={element.userName} userPic={element.userPic} userId={element.userId}/>
         });
     }
 
