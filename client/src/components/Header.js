@@ -1,17 +1,19 @@
 import React from 'react';
+
 import GoogleAuth from './GoogleAuth';
 
-class Header extends React.Component {
-
-    render() {
-        return (
-            <div className="ui three item menu">
-                <p className="item">Home</p>
-                <p className="item">Settings</p>
-                <GoogleAuth/>
+const Header = () => {
+    return (
+        <div className="ui container">
+            <div className="ui large inverted pointing menu">
+                <a className="active item">About</a>
+                <a className="item" target="_blank" href="https://danieldiaz14.github.io">Portfolio</a>
+                <div className="right item">
+                    <GoogleAuth/>
+                </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-export default Header;
+export default Header
