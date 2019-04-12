@@ -7,7 +7,6 @@ class Chat extends React.Component {
     render() {
         return (
             <div className="ui container">
-                <div>asdas</div>
                 <ChatBox/>
             </div>
         )

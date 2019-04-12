@@ -1,4 +1,4 @@
-import { CREATE_CHAT, FETCH_CHATS } from '../actions/types';
+import { CREATE_CHAT, FETCH_CHATS, SIGN_OUT } from '../actions/types';
 
 export default (state = [], action) => {
     switch (action.type) {
@@ -6,6 +6,8 @@ export default (state = [], action) => {
             return [...state, action.payload];
         case FETCH_CHATS:
             return [...state, ...action.payload]
+        case SIGN_OUT:
+            return []
         default:
             return state;
     }

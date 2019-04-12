@@ -11,13 +11,15 @@ class MessageBox extends React.Component{
 
     sendMessage = () => {
         const {currentUser} = this.props;
-        this.props.createChat({
-            message: this.state.value,
-            userName: currentUser.userName,
-            userPic: currentUser.userPic,
-            userId: currentUser.userId
-        });
-        this.setState({value: ''});
+        if (this.state.value.length > 0) {
+            this.props.createChat({
+                message: this.state.value,
+                userName: currentUser.userName,
+                userPic: currentUser.userPic,
+                userId: currentUser.userId
+            });
+            this.setState({value: ''});
+        };
     };
     renderContent = () => {
         const {currentUser} = this.props;

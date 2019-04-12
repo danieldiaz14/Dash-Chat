@@ -31,6 +31,7 @@ export const fetchChats = () => async (dispatch) => {
     const response = await chats.get('/chats');
     dispatch({type: FETCH_CHATS, payload: response.data});
 };
-export const deleteChat = () => async dispatch => {
-
+export const deleteChat = id => async dispatch => {
+    await chats.delete(id);
+    dispatch({type:DELETE_CHAT, payload: id});
 };

@@ -9,7 +9,7 @@ class ChatBox extends React.Component {
 
     componentDidMount() {
         this.props.fetchChats();
-    }
+    };
 
     renderMessages() {
         if (!this.props.messages) {
@@ -17,7 +17,7 @@ class ChatBox extends React.Component {
         };
 
         return this.props.messages.map((element) => {
-            return  <Message key={element.id} message={element.message} userName={element.userName} userPic={element.userPic} userId={element.userId}/>
+            return  <Message key={element.id} dataId={element.id} message={element.message} userName={element.userName} userPic={element.userPic} userId={element.userId}/>
         });
     }
 

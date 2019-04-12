@@ -9,7 +9,7 @@ const Body = () => {
             </div>
             <div className=" ui segment">
                 <div className="ui two column very relaxed grid">
-                    <div class="column">
+                    <div className="column">
                         <h3>Talk to all your friends through this chat app!</h3>
                         <i className="huge users icon"/>
                     </div>
